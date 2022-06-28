@@ -7,7 +7,7 @@ export default function SongsList({ songs }) {
       {
         songs.map((song, i) =>
         {
-          return <div className='song' key={song.title + i + song.rank}>
+          return <div key={song.title + i + song.rank}>
             <Song song={song} title={song.title} rank={song.rank} />
           </div>;
         })

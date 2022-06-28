@@ -7,3 +7,13 @@ export async function getSongs(from = 0, to = 30) {
     .range(from, to);
   return checkError(response);
 }
+
+export async function getSingleSong(rank) {
+  const response = await client
+    .from('ranked_songs')
+    .select()
+    .match({ rank })
+    .single();
+
+  return checkError(response);
+}
