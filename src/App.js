@@ -7,7 +7,6 @@ import {
 import { getSongs } from './services/fetch-utils';
 
 import './App.css';
-import SongsList from './SongsList';
 import SongDetail from './SongDetail';
 import SongsPage from './SongsPage';
 
